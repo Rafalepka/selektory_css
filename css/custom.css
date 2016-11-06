@@ -1,0 +1,48 @@
+div#outer {
+	color: purple;
+}
+
+/* dla p w div musi byc tak jak ponizej */ 
+
+div#outer > p {
+	color: red;
+}
+
+div#outer > h2, div#outer > p {
+	color: red;
+}
+
+div#outer > h2 ~ p {
+	color: yellow;
+}
+
+div#outer > h2 + p {
+	color:lawngreen;
+}
+
+/*albo ostatni ostatni p:last-child*/
+div#outer > p:nth-child(3), div#inner > p:nth-child(2) albo ostatni p:last-child {
+	color: orange;
+}
+
+div#outer > p:not(.first) {
+	color: blue;
+}
+
+a.btn {
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 10px 20px;
+	color: black;
+}
+
+a.btn-lg {
+	padding: 20px 40px;
+	color: aquamarine;
+	font-size: 1.5em;
+}
+
+a.btn-alert {
+	color: orangered;
+	border: 1px solid orangered;
+}
